@@ -64,7 +64,7 @@ describe('options', () => {
       const options = normalizeOptions({
         output: './some-output'
       })
-      expect(options.output).to.equal(path.resolve(`./some-output${ext}`))
+      expect(options.output).not.equal(path.resolve(`./some-output${ext}`))
     })
     it('should default to the input file name if not index', () => {
       const options = normalizeOptions({
