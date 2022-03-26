@@ -34,7 +34,7 @@ describe('options', () => {
         output: 'abc',
         temp: './d'
       })
-      expect(options.temp).to.equal(path.resolve(cwd, './d'))
+      expect(options.temp).to.equal(path.resolve(cwd, './c'))
       expect(options.input).to.equal(path.resolve(cwd, 'entry.js'))
       expect(options.output).to.equal(path.resolve(cwd, `abc${ext}`))
     })
